@@ -1,0 +1,134 @@
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('./image.png'); 
+    background-position: center center; 
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: whitesmoke;
+}
+
+.home-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.home-call-to-action {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.home-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px;
+    width: 150px; 
+    font-weight: bold; 
+}
+
+.home-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.home-button:active {
+    background-color: #3e8e41;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-description,
+    .home-call-to-action {
+        font-size: 1rem;
+    }
+
+    .home-button {
+        font-size: 0.9rem;
+        width: 120px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 1.8rem;
+    }
+
+    .home-description {
+        font-size: 0.9rem;
+        max-width: 90%; 
+    }
+
+    .home-button {
+        font-size: 0.85rem;
+        width: 100px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 1.6rem;
+    }
+
+    .home-description {
+        font-size: 0.85rem;
+    }
+
+    .home-button {
+        font-size: 0.8rem;
+        width: 80px; 
+    }
+}
